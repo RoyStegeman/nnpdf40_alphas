@@ -1,0 +1,10 @@
+********************************************************************************
+SetName: ATLAS_TTB_8TEV_LJ_TRAP_TOT
+Author: Roy Stegeman
+Date: January 2025
+CodesUsed: MATRIX
+TheoryInput: NLO
+PDFset: 240517-rs-alphas_01200
+Warnings: top mass variation mt=170.0 GeV
+********************************************************************************
+1.0751	0.0000

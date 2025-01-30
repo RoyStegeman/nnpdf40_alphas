@@ -1,0 +1,10 @@
+********************************************************************************
+SetName: CMSTOPDIFF8TEVTTRAPNORM-TOPDIFF8TEVTOT
+Author: Roy Stegeman
+Date: January 2025
+CodesUsed: MATRIX
+TheoryInput: NLO
+PDFset: 240517-rs-alphas_01200
+Warnings: top mass variation mt=175.0 GeV
+********************************************************************************
+0.9302	0.0000
