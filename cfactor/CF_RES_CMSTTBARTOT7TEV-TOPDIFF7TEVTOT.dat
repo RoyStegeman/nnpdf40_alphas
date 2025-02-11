@@ -1,0 +1,10 @@
+********************************************************************************
+SetName: CMSTTBARTOT7TEV
+Author: Emanuele R. Nocera emanueleroberto.nocera@unito.it
+Date: January 2025
+CodesUsed: top++ v2.0
+TheoryInput: NLO+NLL (seee runcards)
+PDFset: 240517-rs-alphas_01200
+Warnings: rescaling from 173.3 GeV to 172.5 GeV
+********************************************************************************
+1.0219    0.0000
