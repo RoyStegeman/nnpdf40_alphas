@@ -1,0 +1,20 @@
+********************************************************************************
+SetName: CMS_TTB_DIFF_13TEV_2016_LJ_TRAP
+Author: Emanuele R. Nocera emanueleroberto.nocera@unito.it
+Date: February 2025
+CodesUsed: MG5_aMC_v3_5_7
+TheoryInput: NLO QCD (see runcards https://github.com/NNPDF/pinecards)
+PDFset: 240517-rs-alphas_01200
+Warnings: top mass variation mt=170 GeV
+********************************************************************************
+1.06671	0.00000
+1.06655	0.00000
+1.06999	0.00000
+1.06727	0.00000
+1.06726	0.00000
+1.07151	0.00000
+1.07419	0.00000
+1.07020	0.00000
+1.07640	0.00000
+1.07751	0.00000
+1.08060	0.00000
