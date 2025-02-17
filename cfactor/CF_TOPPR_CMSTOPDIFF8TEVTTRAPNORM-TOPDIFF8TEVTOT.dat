@@ -1,14 +1,10 @@
 ********************************************************************************
-SetName: ATLAS_TTB_8TEV_LJ_TTRAP
+SetName: ATLAS_TTB_8TEV_LJ_TTRAP_TOT
 Author: Emanuele R. Nocera emanueleroberto.nocera@unito.it
 Date: February 2025
 CodesUsed: MG5_aMC_v3_5_7
 TheoryInput: NLO QCD (see runcards https://github.com/NNPDF/pinecards)
 PDFset: 240517-rs-alphas_01200
-Warnings: top mass variation mt=171.8 GeV
+Warnings: top mass variation mt=173.2 GeV
 ********************************************************************************
-1.02020	0.00000
-1.01873	0.00000
-1.01995	0.00000
-1.02308	0.00000
-1.02435	0.00000
+0.97927	0.00000
