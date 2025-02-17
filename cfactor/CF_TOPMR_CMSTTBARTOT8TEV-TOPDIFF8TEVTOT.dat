@@ -1,0 +1,10 @@
+********************************************************************************
+SetName: CMSTTBARTOT8TEV
+Author: Emanuele R. Nocera emanueleroberto.nocera@unito.it
+Date: January 2025
+CodesUsed: top++ v2.0
+TheoryInput: NLO+NLL (seee runcards)
+PDFset: 240517-rs-alphas_01200
+Warnings: top mass variation mt=171.8 GeV
+********************************************************************************
+0.99808    0.00000
