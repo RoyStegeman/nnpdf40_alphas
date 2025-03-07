@@ -14,7 +14,7 @@ from nnpdf_data import legacy_to_new_map
 
 
 def main(fitid):
-    fitname = f"250215-{fitid:03}-rs-closuretest-alphas-tcm"
+    fitname = f"250222-{fitid:03}-rs-closuretest-alphas-tcm"
     process = "ALL"
     logging.info(fitname)
 
@@ -221,7 +221,7 @@ def main(fitid):
 
     pred = alphas_central + delta_T_tilde
     unc = np.sqrt(P_tilde)
-    with open(f'/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/{fitid}.csv', 'a', newline='') as file:
+    with open(f'/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/nopos_noint_sampleexp_{fitid}.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([fitname, f"{pred:.7f}", f"{unc:.7f}"])
 
