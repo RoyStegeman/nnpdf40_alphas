@@ -6,16 +6,13 @@ from scipy.stats import norm
 # Load the central values and uncertainties from the .csv files
 alphas_values = []
 alphas_uncertainties = []
-for i in range(1, 101):
-    filename = f"/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/{i}.csv"
-    # Open each file and read its contents
-    with open(filename, mode='r') as file:
-        reader = csv.reader(file)
-        for row in reader:
-            # Extract the alphas value and uncertainty from each row
-            alphas_values.append(float(row[1]))
-            alphas_uncertainties.append(float(row[2]))
-
+filename = f"/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/tcm_nopos_noint.csv"
+with open(filename, mode='r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        # Extract the alphas value and uncertainty from each row
+        alphas_values.append(float(row[1]))
+        alphas_uncertainties.append(float(row[2]))
 
 # Calculate and print average and standard deviation of alphas values
 average_alphas = np.mean(alphas_values)
