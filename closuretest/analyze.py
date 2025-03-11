@@ -6,7 +6,7 @@ from scipy.stats import norm
 # Load the central values and uncertainties from the .csv files
 alphas_values = []
 alphas_uncertainties = []
-filename = f"/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/tcm_nopos_noint.csv"
+filename = f"/data/theorie/rstegeman/github/nnpdf40_alphas/closuretest/results/crm_nopos_noint.csv"
 with open(filename, mode='r') as file:
     reader = csv.reader(file)
     for row in reader:
@@ -18,8 +18,8 @@ with open(filename, mode='r') as file:
 average_alphas = np.mean(alphas_values)
 std_dev_alphas = np.std(alphas_values)
 average_uncertainty = np.mean(alphas_uncertainties)
-print(f"mean and std of 100 central alphas values: {average_alphas:.6f} ± {std_dev_alphas:.6f}")
-print(f"mean of 100 alphas uncertainties: {average_uncertainty:.6f}")
+print(f"mean and std of 25 central alphas values: {average_alphas:.6f} ± {std_dev_alphas:.6f}")
+print(f"mean of 25 alphas uncertainties: {average_uncertainty:.6f}")
 
 # Plot results + uncs
 indices = np.arange(len(alphas_values)) + 1
@@ -49,7 +49,7 @@ normpdf = norm.pdf(x, mean, std)
 normpdf_scaled = normpdf * len(alphas_values) * (bins[1] - bins[0])
 plt.plot(x, normpdf_scaled, color='blue')
 # Layout
-plt.title('TCM')
+plt.title('CRM')
 plt.axvline(x=0.118, color='gray', linestyle='--')
 plt.xlabel(r"$\alpha_s(m_Z)$")
 plt.xlim(x.min(), x.max())
