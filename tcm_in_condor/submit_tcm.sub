@@ -1,0 +1,18 @@
+# submit_template.sub
+executable   = /data/theorie/rstegeman/miniconda3/envs/nnpdf/bin/python
+arguments    = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/alphas_tcm.py $(fitname)
+output       = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).out
+error        = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).err
+log          = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).log
+
+getenv = true
+
+request_cpus   = 8
+request_memory = 28G
+request_disk   = 8G
+
++JobCategory            = "medium"
++UseOS                  = "el9"
+accounting_group        = smefit
+
+queue fitname from fitnames.txt
