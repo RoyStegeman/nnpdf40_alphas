@@ -1,0 +1,18 @@
+# submit_template.sub
+executable   = /data/theorie/rstegeman/miniconda3/envs/nnpdf/bin/python
+arguments    = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/alphas_crm.py $(fitname)
+output       = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).out
+error        = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).err
+log          = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).log
+
+request_cpus   = 4
+request_memory = 20G
+request_disk   = 8G
+
+priority = 10
+
++JobCategory            = "medium"
++UseOS                  = "el9"
+accounting_group        = smefit
+
+queue fitname from fitnames.txt
