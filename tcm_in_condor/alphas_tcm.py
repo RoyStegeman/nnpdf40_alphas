@@ -223,3 +223,17 @@ if __name__ == "__main__":
     pred = alphas_central + delta_T_tilde
     unc = np.sqrt(P_tilde)
     logging.error(rf"Prediction for $\alpha_s$: {pred:.5f} ± {unc:.5f}")
+
+
+    # =============== REPLICA DISTRIBUTION ====================================
+    vals = alphas_central -S_hat @ invcov @ (theorypreds_fit.to_numpy() - dat_central.reindex(S.index).to_numpy().reshape(-1,1))
+    logging.error(f"std from replica distribution: {np.mean(vals):.5f} ± {np.std(vals):.5f}")
+
+    lower_bound = np.percentile(vals, 16)
+    upper_bound = np.percentile(vals, 84)
+    central_68 = (upper_bound+lower_bound)/2
+    unc_68 = (upper_bound-lower_bound)/2
+    logging.error(f"68%CL from replica distribution: {np.mean(central_68):.5f} ± {unc_68:.5f}")
+
+
+

@@ -5,11 +5,11 @@ output       = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fi
 error        = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).err
 log          = /user/roystege/data/github/nnpdf40_alphas/tcm_in_condor/logs/$(fitname).log
 
-getenv = true
-
-request_cpus   = 8
-request_memory = 28G
+request_cpus   = 4
+request_memory = 20G
 request_disk   = 8G
+
+priority = 10
 
 +JobCategory            = "medium"
 +UseOS                  = "el9"
